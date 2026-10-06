@@ -1,0 +1,47 @@
+[
+  {
+    "sourceName": "Example Tech News Portal",
+    "sourceType": "News",
+    "sourceUrl": "https://example-tech-news.com/article-2026-01",
+    "author": "Jane Reporter",
+    "publicationDate": "2026-09-15",
+    "content": "This is a synthetic demonstration article about a fictional technology security incident. The content is created for testing purposes only and does not represent real events. In this demonstration, we discuss how cybersecurity incidents are typically reported in the media.",
+    "notes": "Demo evidence for Phase 2 testing"
+  },
+  {
+    "sourceName": "Tech Discussion Forum",
+    "sourceType": "Forum",
+    "sourceUrl": "https://example-forum.com/discussion/tech-2026",
+    "author": "DemoUser42",
+    "publicationDate": "2026-09-14",
+    "content": "This is a synthetic forum post used for testing the evidence management system. It demonstrates how publicly available discussions can be collected as evidence. The content is entirely fictional and created for academic demonstration purposes only.",
+    "notes": "Demo forum post - fictional content"
+  },
+  {
+    "sourceName": "Example Tech Blog",
+    "sourceType": "Blog",
+    "sourceUrl": "https://example-blog.demo/post/testing-123",
+    "author": "Admin User",
+    "publicationDate": "2026-09-13",
+    "content": "Blog post for demonstration: This synthetic blog entry showcases how blog content can be incorporated into a forensic investigation. All content here is fictional and created solely for testing the Digital Forensic Analysis platform.",
+    "notes": "Demo blog post"
+  },
+  {
+    "sourceName": "Example Public News Feed",
+    "sourceType": "Public Social Media",
+    "sourceUrl": "https://example-social.demo/public/post/demo2026",
+    "author": "ExampleOrg",
+    "publicationDate": "2026-09-12",
+    "content": "This is a fictional social media post created for testing purposes. It demonstrates how publicly shared social media content can be collected and stored as evidence in the forensic analysis system.",
+    "notes": "Demo social media post"
+  },
+  {
+    "sourceName": "Technology Research Report",
+    "sourceType": "Other Public Web Source",
+    "sourceUrl": "https://example-research.org/report/demo-2026",
+    "author": "Research Team",
+    "publicationDate": "2026-09-10",
+    "content": "This is a fictional research report excerpt used for testing. It demonstrates how various types of publicly available web content can be imported into the evidence management system for forensic analysis.",
+    "notes": "Demo research document"
+  }
+]

@@ -1,0 +1,25 @@
+{
+  "name": "digital-forensic-social-media-analysis",
+  "version": "1.0.0",
+  "description": "Academic final-year cybersecurity/digital-forensics project",
+  "scripts": {
+    "install-all": "npm install && cd client && npm install && cd ../server && npm install",
+    "dev": "concurrently \"cd server && npm run dev\" \"cd client && npm run dev\"",
+    "server": "cd server && npm run dev",
+    "client": "cd client && npm run dev",
+    "build": "cd client && npm run build",
+    "preview": "cd client && npm run preview"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "keywords": [
+    "digital-forensics",
+    "social-media",
+    "analysis",
+    "academic-project",
+    "cybersecurity"
+  ],
+  "author": "Academic Project",
+  "license": "MIT"
+}

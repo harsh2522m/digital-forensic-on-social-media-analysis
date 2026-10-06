@@ -1,0 +1,47 @@
+services:
+  # Backend API service
+  - type: web
+    name: digital-forensic-backend
+    runtime: node
+    buildCommand: cd server && npm install && cd ..
+    startCommand: cd server && npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 5000
+      - key: MONGODB_URI
+        fromDatabase:
+          name: mongodb-atlas
+          property: connectionString
+      - key: CLIENT_URL
+        fromService:
+          name: digital-forensic-frontend
+          type: static_site
+          property: url
+    healthCheckPath: /api/health
+    healthCheckInterval: 30
+    
+  # Frontend static site
+  - type: static_site
+    name: digital-forensic-frontend
+    buildCommand: npm install && npm run install-all && npm run build
+    staticPublishPath: client/dist
+    envVars:
+      - key: VITE_API_URL
+        fromService:
+          name: digital-forensic-backend
+          type: web
+          property: url
+          suffix: /api
+    # SPA rewrite: serve index.html for all non-file requests
+    routes:
+      - path: /*
+        destination: /index.html
+        # Only rewrite if request doesn't have a file extension
+        methods: [GET, HEAD]
+
+databases:
+  - name: mongodb-atlas
+    databaseName: digital-forensics
+    plan: free
